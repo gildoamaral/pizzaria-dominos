@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './Navbar.css'
 import menuIcon from './menu.png'
 
 function NavbarList({ isMobile }: { isMobile?: boolean }) {

@@ -1,4 +1,3 @@
-import './App.css'
 import BarraNavegacao from './components/Navbar/BarraNavegacao'
 
 
