@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+# Domino's Pizza Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+O seguinte programa foi desenvolvido totalmente por mim, sem auxilio de cursos ou materiais de apoio. Visie colocar em pratica meus conhecimentos e aprimorar minha capacidade de buscar respostas por conta própria.
 
-Currently, two official plugins are available:
+* **STATUS:** _Em Desenvolvimento_
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Objetivo
 
-## Expanding the ESLint configuration
+Seu objetivo foi a criação de uma **Cópia aproximada do site da Dominos's Pizza**, uma pizzaria bastante famosa no Rio de Janeiro, com suas funcionalidades sendo simuladas.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+São requisitos funcionais:
 
-- Configure the top-level `parserOptions` property like this:
+* O Usuário poderá _navegar pela pagina inicial_;
+* O Usuário poderá _visitar o cardápio_;
+* O Usuário poderá _filtrar o sabor_;
+* O Usuário poderá _fazer um pedido_;
+* O Usuário poderá _acompanhar o pedido_;
+* O Usuário poderá _Fazer o Cadastro_;
+* O Usuário poderá _fazer o Login_;
+* O Usuário poderá _ver o Carrinho_;
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Conceitos Utilizados
+
+Para a criação deste projeto, foram utilizados:
+
+* `REACT` 
+  * *UseState* 
+  * *UseEffect* 
+  * *React Router*
+  * *UseContext* 
+  * *Componentização do Código*
+* Programação com `Typescript`;
+* Chamadas para `API` externa com `Axios`;
+* Estilização com o framework `Tailwind`;
+* Testes com `React Testing Library`
+* Código organizado e totalmente em Inglês;
+* Responsividade (Modelo Mobile First);
+* Criação de conteúdo dinâmico;
+
+## Imagem Demonstrativa
+
+## Acesse aqui:
