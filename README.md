@@ -31,6 +31,7 @@ Para a criação deste projeto, foram utilizados:
   * *UseContext* 
   * *Componentização do Código*
 * Programação com `Typescript`;
+* ``Vite``
 * Chamadas para `API` externa com `Axios`;
 * Estilização com o framework `Tailwind`;
 * Testes com `React Testing Library`
