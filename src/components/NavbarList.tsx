@@ -1,8 +1,11 @@
 import { useState } from 'react';
-import menuIcon from './menu.png'
+import menuIcon from '../assets/menu.png'
+import { useIsMobileContext } from '../contexts/useIsMobileContext';
 
-function NavbarList({ isMobile }: { isMobile?: boolean }) {
+
+function NavbarList() {
   const [menuVisible, setMenuVisible] = useState(false);
+  const isMobile = useIsMobileContext()
 
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);

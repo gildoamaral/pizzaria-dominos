@@ -1,17 +1,24 @@
-import BarraNavegacao from './components/Navbar/BarraNavegacao'
+import BarraNavegacao from './components/BarraNavegacao'
+import MainBg from './components/MainBg'
+import { IsMobileContextProvider } from './contexts/IsMobile'
 
 
 function App() {
 
 
   return (
-    <div className="flex bg-slate-200 h-screen flex-col">
-      <BarraNavegacao />
+    <IsMobileContextProvider>
 
-      <div className="outlet">
-      </div>
+      <MainBg>
 
-    </div>
+        <div className="flex bg-slate-200 h-screen flex-col">
+
+          <BarraNavegacao />
+
+
+        </div>
+      </MainBg>
+    </IsMobileContextProvider>
   )
 }
 
