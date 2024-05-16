@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-const MainBg = () => {
-  return (
-    <div>MainBg</div>
-  )
-}
+const MainBg = ({ children }) => {
+    return <div>MainBg</div>;
+};
 
-export default MainBg
+export default MainBg;
