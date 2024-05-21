@@ -12,7 +12,7 @@ function NavbarList() {
 
 
   return (
-    <div className=' sm:px-4 w-screen flex items-center justify-between text-white text-lg leading-none text-center '>
+    <div className='sm:px-4 pr-4 w-full flex items-center justify-between text-white text-lg leading-none text-center '>
 
       {/* Left Section in the navbar */}
       <MenuContextProvider>

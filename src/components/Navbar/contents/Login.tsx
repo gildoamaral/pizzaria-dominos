@@ -15,7 +15,7 @@ const Login = () => {
 
   ) : (
 
-    <div className='w-52 mx-3 h-full flex justify-center items-center bg-sky-800 min-w-24'>
+    <div className='w-52 mx-3 h-full flex justify-center items-center bg-sky-800 min-w-40'>
     <a href="" className='flex items-center gap-8'>
         <img src={person} alt="person" className='h-7 invert' />
         <div className=''>

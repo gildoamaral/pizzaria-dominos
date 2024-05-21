@@ -37,16 +37,16 @@ const Menu = () => {
         <Login />
 
         <ul className={'p-5 leading-6'}>
-          <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-500 hover:bg-sky-800 mb-2 `}>
+          <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-500 hover:bg-sky-800 `}>
             Pedir minha pizza
           </li>
-          <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-500 hover:bg-sky-800 mb-2`}>
+          <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-500 hover:bg-sky-800`}>
             Cardápio
           </li>
-          <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-500 hover:bg-sky-800 mb-2`}>
+          <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-500 hover:bg-sky-800`}>
             PROMOÇÕES
           </li>
-          <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-500 hover:bg-sky-800 mb-2`}>
+          <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-500 hover:bg-sky-800`}>
             Acompanhar pedido
           </li>
         </ul>
@@ -60,20 +60,20 @@ const Menu = () => {
         <li className={`mx-3`}>
           <Logo />
         </li>
-        <li className={`cursor-pointer h-full flex items-center  transition-all duration-500 hover:bg-sky-800 mb-2`}>
+        <li className={`cursor-pointer h-full flex items-center  transition-all duration-500 hover:bg-sky-800`}>
           PEDIR MINHA PIZZA
         </li>
-        <li className={`cursor-pointer h-full flex items-center p-3 transition-all duration-500 hover:bg-sky-800 mb-2`}>
+        <li className={`cursor-pointer h-full flex items-center p-3 transition-all duration-500 hover:bg-sky-800`}>
           CARDÁPIO
         </li>
-        <li className={`cursor-pointer h-full flex items-center p-3  transition-all duration-500 hover:bg-sky-800 mb-2`}>
+        <li className={`cursor-pointer h-full flex items-center p-3  transition-all duration-500 hover:bg-sky-800`}>
           PROMOÇÕES
         </li>
-        <li className={`cursor-pointer h-full flex items-center  transition-all duration-500 hover:bg-sky-800 mb-2`}>
+        <li className={`cursor-pointer h-full flex items-center  transition-all duration-500 hover:bg-sky-800`}>
           ACOMPANHAR PEDIDO
         </li>
-        <li className={`mx-3 border-2 rounded mb-2 min-w-28`}>
-          <button className='p-2  flex items-center  transition-all duration-500 hover:bg-sky-900'>
+        <li className={`mx-3 border-2 rounded min-w-32`}>
+          <button className='p-2  flex items-center transition-all duration-500 hover:bg-sky-900'>
             <img src={local} className='w-8 invert' />
             VEJA A DOMINO'S MAIS PRÓXIMA
           </button>
