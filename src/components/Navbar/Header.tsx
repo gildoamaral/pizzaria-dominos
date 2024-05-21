@@ -12,7 +12,7 @@ const Header = () => {
                 </MainBg>
             </header>
 
-            <div className='sm:hidden h-11 w-screen bg-slate-50 flex justify-between items-center shadow-custom-header px-5 pr-8  '>
+            <div className='sm:hidden h-11 w-screen bg-slate-50 flex justify-between items-center shadow-md px-5 pr-8  '>
                 <h1 className='text-sky-700'>ACOMPANHAR PEDIDO</h1>
                 <img src={local} alt="" className='w-8' />
             </div>

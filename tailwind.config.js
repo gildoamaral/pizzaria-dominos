@@ -11,8 +11,9 @@ export default {
             'Namdhinggo': ['"Namdhinggo"', 'sans-serif'],
           },
           boxShadow: {
-            'custom-bottom': '4px 5px 10px 2px rgba(0, 0, 0, 0.25)',
+            'custom-bottom': '3px 3px 7px 0 rgba(0, 0, 0, 0.5)',
             'custom-header': '0 7px 10px 0 rgba(0, 0, 0, 0.25)',
+            'custom-right': '2px 1px 10px 3px rgba(0, 0, 0, 0.5)'
           },
         },
       },

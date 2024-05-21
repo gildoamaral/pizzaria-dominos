@@ -13,20 +13,23 @@ const Menu = () => {
 
 
   return isMobile ? (
+
+
+    // Navbar Suspenso Mobile
     <>
       {menuVisible && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ type: 'spring', damping: 30 }}
-          className="fixed inset-0 bg-white bg-opacity-75 z-40" onClick={toggleMenu}></motion.div>
+          className="fixed inset-0 bg-white bg-opacity-75 z-40 cursor-pointer" onClick={toggleMenu}></motion.div>
       )}
 
       <motion.nav
         initial={{ x: '-100%' }}
-        animate={{ x: menuVisible ? 0 : '-100%' }}
+        animate={{ x: menuVisible ? 0 : '-200%' }}
         transition={{ type: 'spring', stiffness: 200, damping: 30 }}
-        className={`bg-sky-600 absolute  left-0 top-0 h-screen w-48 z-50 font-pathway-gothic font-semibold border-r-4 border-sky-800`}>
+        className={`bg-sky-600 absolute  left-0 top-0 h-screen w-48 z-50 font-pathway-gothic font-semibold shadow-custom-right border-sky-800`}>
 
         <div className='text-end pr-3 pt-3 bg-sky-800'>
           <button onClick={toggleMenu}>
@@ -55,7 +58,9 @@ const Menu = () => {
 
   ) : (
 
+    // Elementos do Navbar Comum
     <nav className={'h-full'}>
+      
       <ul className={'flex justify-between items-center h-full '}>
         <li className={`mx-3`}>
           <Logo />

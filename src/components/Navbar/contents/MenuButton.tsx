@@ -1,13 +1,26 @@
-import menuIcon from '../../../assets/menuIcon.png'
 import useMenuContext from '../../../contexts/useMenuContext'
-
 
 
 const MenuButton = () => {
   const {toggleMenu} = useMenuContext()
 
-
-  return <img onClick={toggleMenu} src={menuIcon} className={`sm:hidden invert h-12 cursor-pointer transition-all rounded-full`}/>
+  return   <svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="32"
+  height="32"
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  strokeWidth="2"
+  strokeLinecap="round"
+  strokeLinejoin="round"
+  onClick={toggleMenu}
+  className="feather feather-menu sm:hidden cursor-pointer"
+>
+  <line x1="3" y1="12" x2="21" y2="12" />
+  <line x1="3" y1="6" x2="21" y2="6" />
+  <line x1="3" y1="18" x2="21" y2="18" />
+</svg>
 }
 
 export default MenuButton
