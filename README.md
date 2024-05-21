@@ -29,9 +29,16 @@ Para a criação deste projeto, foram utilizados:
     -   _React Router_
     -   _UseContext_
     -   _Componentização do Código_
+
+-   Outras Bibliotecas `REACT`
+    -   _react-feather (para icones)_
+    -   _framer-motion (animaçoes)_
+    -   _fortawesome (para icones)_
+
 -   Programação com `Typescript`;
 -   `Vite`;
 -   `Prettier`;
+
 -   Chamadas para `API` externa com `Axios`;
 -   Estilização com o framework `Tailwind`;
 -   Testes com `React Testing Library`;
@@ -42,3 +49,4 @@ Para a criação deste projeto, foram utilizados:
 ## Imagem Demonstrativa
 
 ## Acesse aqui:
+[Pizzaria Domino's Clone](https://pizzaria-dominos.vercel.app/)
