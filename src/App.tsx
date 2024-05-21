@@ -1,20 +1,22 @@
-import BarraNavegacao from './components/BarraNavegacao';
+import Header from './components/Navbar/Header';
+import Delivery from './components/Delivery';
 import MainBg from './components/MainBg';
-// import MainBg from './components/MainBg';
-import { IsMobileContextProvider } from './contexts/IsMobile';
+import { IsMobileContextProvider } from './contexts/IsMobileContext';
+
 
 function App() {
+
+
     return (
         <IsMobileContextProvider>
-            <BarraNavegacao />
+            <Header />
             <main className='w-screen flex justify-center'>
 
                 <MainBg>
+                    <Delivery />
 
-                    <div className='bg-yellow-200 flex flex-col items-center max-w-7xl'>
-                        dasda
 
-                    </div>
+
 
                 </MainBg>
 

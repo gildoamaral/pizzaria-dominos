@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=League+Gothic&family=Pathway+Gothic+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Namdhinggo:wght@800&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -12,7 +13,8 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'League Gothic', Arial, sans-serif;
     font-size: 16px;
     line-height: 1.5;
+
 }

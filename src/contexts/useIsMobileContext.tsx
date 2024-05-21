@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { IsMobileContext } from './IsMobile';
+import { IsMobileContext } from './IsMobileContext';
 
 export const useIsMobileContext = () => {
     const isMobile: boolean = useContext<boolean>(IsMobileContext);
