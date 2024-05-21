@@ -13,17 +13,33 @@ function App() {
     return (
         <IsMobileContextProvider>
             <Header />
-            <main className='w-screen flex justify-center'>
+            <main className=' flex justify-center'>
 
                 <MainBg col>
-                    <Delivery />
-                    <div className='bg-yellow-200 w-full flex gap-4 flex-wrap m-8 '>
-                        <a href=""><img src={publi1} alt=""  className=''/></a>
-                        <a href=""><img src={publi2} alt="" className='h-10'/></a>
-                        <a href=""><img src={publi3} alt="" /></a>
-                        <a href=""><img src={publi4} alt="" /></a>
-                    </div>
 
+                    <Delivery />
+
+
+                    <div className="flex flex-col  gap-4 mt-10 items-center">
+
+                        <div className='flex justify-center  gap-4'>
+
+                            <div>
+                                <img src={publi1} alt="Image 1" />
+                            </div>
+
+                            <div className=" flex flex-col gap-4">
+
+                                <img src={publi2} alt="Image 2" />
+
+                                <img src={publi3} alt="Image 3" />
+
+                            </div>
+                        </div>
+
+                        <img src={publi4} alt="Image 4" />
+
+                    </div>
 
 
                 </MainBg>

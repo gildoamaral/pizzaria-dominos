@@ -15,7 +15,7 @@ const Delivery = () => {
             </a>
         </div>
     ) : (
-        <div className=' w-full mt-28 text-center flex justify-center bg-green-400'>
+        <div className=' w-full mt-28 text-center flex justify-center '>
 
             <Line />
             <h1 className='text-sky-700 text-3xl max-w-60 leading-none '>ESCOLHA SUA FORMA DE ENTREGA</h1>

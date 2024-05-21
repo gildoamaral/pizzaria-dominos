@@ -12,12 +12,18 @@ function NavbarList() {
 
 
   return (
-    <div className=' px-4 w-screen flex items-center justify-between text-white text-lg leading-none text-center '>
+    <div className=' sm:px-4 w-screen flex items-center justify-between text-white text-lg leading-none text-center '>
+
+      {/* Left Section in the navbar */}
       <MenuContextProvider>
         <MenuButton />
         <Menu />
       </MenuContextProvider>
+
+      {/* Middle Sections in the navbar */}
       {isMobile ? <Logo /> : <Login />}
+
+      {/* Right Section in the navbar */}
       <Cart />
     </div>
   );
