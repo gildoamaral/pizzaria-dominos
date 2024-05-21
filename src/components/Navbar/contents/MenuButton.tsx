@@ -2,6 +2,7 @@ import menuIcon from '../../../assets/menuIcon.png'
 import useMenuContext from '../../../contexts/useMenuContext'
 
 
+
 const MenuButton = () => {
   const {toggleMenu} = useMenuContext()
 

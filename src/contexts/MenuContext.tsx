@@ -8,7 +8,6 @@ export interface MenuContextType {
 
 export const MenuContext = createContext<MenuContextType | undefined>(undefined);
 
-
 export const MenuContextProvider = ({ children }: { children: ReactNode}) => {
   const [menuVisible, setMenuVisible] = useState<boolean>(false);
 

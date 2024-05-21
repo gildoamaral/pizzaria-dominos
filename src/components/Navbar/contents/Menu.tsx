@@ -12,7 +12,7 @@ const Menu = () => {
   
 
   return isMobile ? (
-    <nav className={menuVisible ? `bg-sky-600 absolute left-0 top-0 h-screen w-44` : 'hidden'}>
+    <nav className={`transition-all duration-500 ${menuVisible ? 'bg-sky-600 absolute  left-0 top-0 h-screen w-44' : 'hidden'}`}>
       <div className='text-end pr-3 pt-3 bg-sky-800'>
         <button onClick={toggleMenu}>
           <X className="h-5 text-white" />
@@ -22,16 +22,16 @@ const Menu = () => {
       <Login />
 
       <ul className={'p-5 leading-6'}>
-        <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-700 hover:bg-sky-800 mb-2 `}>
+        <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-500 hover:bg-sky-800 mb-2 `}>
           Pedir minha pizza
         </li>
-        <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-700 hover:bg-sky-800 mb-2`}>
+        <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-500 hover:bg-sky-800 mb-2`}>
           Cardápio
         </li>
-        <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-700 hover:bg-sky-800 mb-2`}>
+        <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-500 hover:bg-sky-800 mb-2`}>
           PROMOÇÕES
         </li>
-        <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-700 hover:bg-sky-800 mb-2`}>
+        <li className={`cursor-pointer p-1 h-full flex items-center  transition-all duration-500 hover:bg-sky-800 mb-2`}>
           Acompanhar pedido
         </li>
       </ul>
