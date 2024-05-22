@@ -6,7 +6,7 @@ const Cart = () => {
 
   return isMobile ? (
 
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center pr-4 xs:pr-0">
     <div className='overflow-hidden w-12 relative'>
       <span className='bg-red-600 h-4 w-4 absolute z-10 rounded-full right-0 top-1 text-xs'>0</span>
       <img src={cart} alt="cart" className='h-10 object-cover scale-x-[-1]' />

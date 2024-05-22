@@ -15,6 +15,9 @@ export default {
             'custom-header': '0 7px 10px 0 rgba(0, 0, 0, 0.25)',
             'custom-right': '2px 1px 10px 3px rgba(0, 0, 0, 0.5)'
           },
+          screens: {
+            'xs': {'max': '420px'}
+          },
         },
       },
     plugins: [],

@@ -18,3 +18,12 @@ body {
     line-height: 1.5;
     /* overflow-x: hidden; */
 }
+
+.text-outline-blue {
+    color: white;
+    text-shadow: 
+      -1px -1px 0 blue,  
+      1px -1px 0 blue,
+      -1px 1px 0 blue,
+      1px 1px 0 blue;
+  }

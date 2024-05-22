@@ -1,6 +1,8 @@
 import MainBg from '../MainBg';
 import NavbarList from './contents/NavbarList';
-import local from '../../assets/local.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+
 
 const Header = () => {
 
@@ -14,7 +16,8 @@ const Header = () => {
 
             <div className='sm:hidden h-11 w-screen bg-slate-50 flex justify-between items-center shadow-md px-5 pr-8  '>
                 <h1 className='text-sky-700'>ACOMPANHAR PEDIDO</h1>
-                <img src={local} alt="" className='w-8' />
+
+                <FontAwesomeIcon icon={faLocationDot} size='xl' className='text-sky-700'/>
             </div>
         </div>
     );
