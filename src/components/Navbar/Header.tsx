@@ -1,25 +1,42 @@
-import MainBg from '../MainBg';
-import NavbarList from './contents/NavbarList';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
+import { MenuContextProvider } from '../../contexts/MenuContext';
+import MenuButton from './contents/MenuMobileButtonButton';
+import MenuDesktop from './contents/MenuDesktop';
+import Logo from './contents/Logo';
+import Login from './contents/HeaderLogin';
+import Cart from './contents/Cart';
+import { useIsMobileContext } from '../../contexts/useIsMobileContext';
+import SubHeader from './contents/SubHeader';
+import MenuMobile from './contents/MenuMobile';
+import HeaderContainer from './contents/HeaderContainer';
 
 
 const Header = () => {
+    const isMobile = useIsMobileContext()
 
     return (
-        <div className='fixed'>
-            <header className={`sm:h-20 h-12 w-screen bg-sky-700 flex justify-center shadow-custom-header `}>
-                <MainBg >
-                    <NavbarList />
-                </MainBg>
-            </header>
+        <>
+            <HeaderContainer>
+                {isMobile ? (
+                    <>
+                        <MenuContextProvider>
+                            <MenuButton />
+                            <MenuMobile />
+                        </MenuContextProvider>
+                        <Logo />
+                        <Cart />
+                    </>
+                ) : (
+                    <>
 
-            <div className='sm:hidden h-11 w-screen bg-slate-50 flex justify-between items-center shadow-md px-5 pr-8  '>
-                <h1 className='text-sky-700'>ACOMPANHAR PEDIDO</h1>
+                        <MenuDesktop />
+                        <Login />
+                        <Cart />
+                    </>
+                )}
+            </HeaderContainer>
 
-                <FontAwesomeIcon icon={faLocationDot} size='xl' className='text-sky-700'/>
-            </div>
-        </div>
+            <SubHeader local/>
+        </>
     );
 };
 

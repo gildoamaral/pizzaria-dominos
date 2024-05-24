@@ -1,9 +1,8 @@
 import Header from './components/Navbar/Header';
-import Delivery from './components/Delivery';
-import MainBg from './components/MainBg';
 import { IsMobileContextProvider } from './contexts/IsMobileContext';
-import Section1 from './components/Section1';
 import Footer from './components/Footer/Footer';
+import MainContainer from './components/Main/contents/MainContainer';
+import Main from './components/Main/Main';
 
 function App() {
 
@@ -12,17 +11,11 @@ function App() {
     return (
         <IsMobileContextProvider>
             <Header />
-            <main className=' flex justify-center'>
 
-                <MainBg col>
+            <MainContainer>
+                <Main />
 
-                    <Delivery />
-
-                    <Section1 />
-
-                </MainBg>
-
-            </main>
+            </MainContainer>
             <Footer />
 
         </IsMobileContextProvider>

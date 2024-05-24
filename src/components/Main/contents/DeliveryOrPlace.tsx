@@ -1,20 +1,19 @@
-
-import { useIsMobileContext } from '../contexts/useIsMobileContext'
-import ButtonLink from './ButtonLink';
+import { useIsMobileContext } from '../../../contexts/useIsMobileContext';
+import ButtonLink from '../../ButtonLink';
 
 const Line = () => <div className='border-b-2 border-gray-300 w-28 h-1/2' />
 
-const Delivery = () => {
+const DeliveryOrPlace = () => {
     const isMobile = useIsMobileContext();
 
     return isMobile ? (
 
-        <div className=' mt-24 pt-1 text-center w-full flex flex-col  gap-2'>
+        <div className='pt-1 text-center w-full flex flex-col  gap-2'>
             <h1 className='text-sky-700 text-3xl'>SUA PIZZA FAVORITA ESTÁ AQUI</h1>
             <ButtonLink>pedir minha pizza</ButtonLink>
         </div>
     ) : (
-        <div className=' w-full mt-28 text-center flex justify-center '>
+        <div className=' w-full text-center flex justify-center '>
 
             <Line />
             <h1 className='text-sky-700 text-3xl max-w-60 leading-none '>ESCOLHA SUA FORMA DE ENTREGA</h1>
@@ -30,4 +29,4 @@ const Delivery = () => {
 
 
 
-export default Delivery
+export default DeliveryOrPlace
