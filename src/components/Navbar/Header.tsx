@@ -27,7 +27,6 @@ const Header = () => {
                     </>
                 ) : (
                     <>
-
                         <MenuDesktop />
                         <Login />
                         <Cart />

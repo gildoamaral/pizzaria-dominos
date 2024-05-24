@@ -48,5 +48,13 @@ Para a criação deste projeto, foram utilizados:
 
 ## Imagem Demonstrativa
 
+### Mobile
+![Mobile](src/assets/image-1.png)
+### Desktop
+![Desktop](src/assets/image.png)
+
 ## Acesse aqui:
+Acesse o site: 
 [Pizzaria Domino's Clone](https://pizzaria-dominos.vercel.app/)
+
+_Todo o programa foi feito inspirado no site https://www.dominos.com.br/_
